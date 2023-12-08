@@ -1,0 +1,129 @@
+#main_container{
+    margin-top: 20px;
+    text-align: center;
+}
+#main_container h3{
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: stretch;
+}
+
+.poster {
+    flex: 1;
+}
+.poster h2{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+.poster img {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+    color: white;
+    font-weight: lighter;
+}
+.details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form {
+    color: white;
+    font-weight: lighter;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.form h5 {
+    font-size: 24px;
+    padding-bottom: 10px;
+border-bottom: solid 1px rgba(255, 255, 255, 0.3)
+}
+
+.form label {
+    margin-top: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+    font-weight: lighter;
+}
+
+.form input[type="text"],
+.form select{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.form select{
+    margin-bottom: 100px;
+}
+.form input[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+    margin-top: 6px;
+}
+#sec{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .poster,
+    .details,
+    .form {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+footer{margin-top: 200px;}

@@ -1,0 +1,78 @@
+#main_card{
+    margin-top: 20px;
+    text-align: center;
+}
+#main_card h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+.container {
+    width: 90%;
+    margin: 40px auto;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.item h3 {
+    font-family: 'Raleway';
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    transition: ease-in-out 0.3s;
+}
+.item img{
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+    .item {
+    width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .item {
+    width: calc(25% - 10px);
+    }
+}
+
+.item img {
+    width: 70%;
+    text-align: center;
+}
+
+.item h4 {
+    font-family: 'Raleway';
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+  .item:hover img {
+    filter: brightness(0.4); /* 이미지 어둡게 처리 */
+  }
+  
+  .item:hover h3 {
+    opacity: 1; /* 텍스트 표시 */
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  footer{margin-top: 166px;}
